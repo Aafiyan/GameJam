@@ -1,0 +1,98 @@
+<!-- File: login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameJam - Login / Sign Up</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #1f0036, #4400a5);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .nav-buttons button {
+      margin-left: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #00d4ff;
+      color: black;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      background-color: #ff1f75;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #e6005c;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GameJam</h1>
+    <div class="nav-buttons">
+      <button onclick="location.href='loginform.html'">Login</button>
+      <button onclick="location.href='signupform.html'">Sign Up</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Play Games, Battle Friends</h2>
+    <p>Challenge your friends, track progress, and earn badges. It’s GameJam time!</p>
+    <button class="cta-button" onclick="location.href='loginform.html'">Play Now</button>
+  </section>
+
+</body>
+</html>
